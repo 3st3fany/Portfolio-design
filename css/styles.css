@@ -11021,3 +11021,24 @@ header.masthead h1, header.masthead .h1 {
   height: 24px;
   background-color: #142D55;
 }
+
+/* Ajustes para telas pequenas */
+@media (max-width: 576px) {
+  #contact .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact .row > * {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #contact a,
+  #contact p {
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+  }
+}
+
